@@ -9,7 +9,6 @@
       "esModuleInterop": true,
       "module": "esnext",
       "moduleResolution": "node",
-      "jsx": "react",
       "rootDir": "src",
       "baseUrl": "src",
       "paths": {
@@ -20,8 +19,6 @@
     },
     "include": [
       "src"
-    ],
-    "exclude": [
-      "src/main/test/cypress"
     ]
+   
   }
