@@ -13,6 +13,12 @@
     "test:ci": "yarn test -- --coverage",
     "lint": "eslint"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo testeeeeeeee",
+      "pre-push": "yarn run test:ci"
+    }
+  },
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^15.3.0",

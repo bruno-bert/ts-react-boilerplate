@@ -1,6 +1,0 @@
-{
-    "hooks": {
-        "pre-commit": "echo testeeeeeeee",
-        "pre-push": "yarn run test:ci"
-    }
-}
