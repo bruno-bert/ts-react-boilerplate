@@ -1,6 +1,6 @@
 {
     "hooks": {
-        "pre-commit": "./node_modules/.bin/lint-staged",
+        "pre-commit": "echo testeeeeeeee",
         "pre-push": "yarn run test:ci"
     }
 }
