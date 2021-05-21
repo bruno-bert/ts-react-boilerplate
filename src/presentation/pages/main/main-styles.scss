@@ -1,7 +1,35 @@
+$white: #FFF;
+$black: #000;
+$background: #F2F2F2;
+$primary: #880E4F;
+$primaryDark: #560027;
+$primaryLight: #BC477B;
+
 * {
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $background;
 }
 
 .main{
-    background-color: rgb(159, 218, 213);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    
+    .header{
+        background-color: $primary;
+        height: 40px;
+    }
+    .form{}
+    .footer{
+        background-color: $primary;
+        height: 40px;
+    }
 }

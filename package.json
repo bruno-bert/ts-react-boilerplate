@@ -7,7 +7,9 @@
   "author": "Bruno Bertoni de Paula",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "node index",
+    "dev:base": "webpack serve --config webpack.config.js",
+    "dev": "yarn run dev:base --open",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "yarn test -- --watch",
     "test:staged": "yarn test -- --findRelatedTests",
