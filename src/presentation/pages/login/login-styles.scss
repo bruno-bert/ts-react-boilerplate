@@ -1,9 +1,4 @@
-$white: #FFF;
-$black: #000;
-$background: #F2F2F2;
-$primary: #880E4F;
-$primaryDark: #560027;
-$primaryLight: #BC477B;
+@import '../../styles/colors.scss' ;
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -22,11 +17,17 @@ input[type="password"]{
     border: 1px solid $primaryLight;
     line-height: 40px;
     border-radius: 4px;
+    padding: 0px  40px 0px 8px;
 
     &:focus{
         outline-color: $primaryLight;
     }
 }
+
+
+
+
+
 
 button{
     background-color: $primary;
@@ -35,9 +36,11 @@ button{
     font-size: 16px;
     border: none;
     line-height: 60px;
+    
 
     &:hover{
         opacity: .9;
+        cursor: pointer;
     }
 }
 
@@ -78,6 +81,55 @@ button{
             text-align: center;
             text-transform: uppercase;
             font-size: 20px;
+        }
+
+        .inputWrap{
+            margin-top: 16px;
+            display: flex;
+            position: relative;
+            align-items: center;
+        
+            input{
+                flex-grow: 1;
+            }
+        
+            .inputStatus{
+                position: absolute;
+                right: 8px;
+                font-size: 12px;
+                cursor: help;
+            }
+        }
+
+        .submit{
+            margin-top: 28px;
+        }
+        .link{
+            text-align: center;
+            color: $primaryDark;
+            margin-top: 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .errorWrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .spinner{
+                margin-top:30px;
+            }
+
+            .error{
+                margin-top:30px;
+                color: $primaryLight;
+
+            }
         }
         
     }
