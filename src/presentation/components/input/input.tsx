@@ -21,11 +21,11 @@ const Input: React.FC<Props> = (props: Props) => {
   }
 
   const getStatus = (): string => {
-    return '\u{1F534}'
+    return error ? '\u{1F534}' : '\u{1F7E2}'
   }
 
   const getTitle = (): string => {
-    return error
+    return error || 'Tudo certo!'
   }
 
   return (
