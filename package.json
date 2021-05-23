@@ -6,6 +6,7 @@
   "repository": "https://github.com/bruno-bert/ts-react-boilerplate.git",
   "author": "Bruno Bertoni de Paula",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "start": "node index",
     "dev:base": "webpack serve --config webpack.config.js",
@@ -15,7 +16,7 @@
     "test:staged": "yarn test -- --findRelatedTests",
     "test:ci": "yarn test -- --coverage",
     "lint": "eslint",
-    "prepare": "husky install"
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.7",
