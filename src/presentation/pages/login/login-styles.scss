@@ -28,6 +28,16 @@
 
         .submit{
             margin-top: 28px;
+
+            &:disabled{
+                background-color: $disabledBg;
+                color: $disabledColor;
+
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            
         }
         .link{
             text-align: center;
