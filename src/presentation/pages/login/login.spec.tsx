@@ -79,7 +79,7 @@ describe('Login Component', () => {
     const password = faker.internet.password()
     fireEvent.input(passwordInput, { target: { value: password } })
     const passwordStatus = sut.getByTestId('password-status')
-    expect(passwordStatus.title).toBe('Tudo certo!')
+    expect(passwordStatus.title).toBe('ok')
     expect(passwordStatus.textContent).toBe('\u{1F7E2}')
   })
 })
