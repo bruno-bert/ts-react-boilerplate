@@ -25,7 +25,7 @@ const Input: React.FC<Props> = (props: Props) => {
   }
 
   const getTitle = (): string => {
-    return error || 'ok'
+    return error || 'passed'
   }
 
   return (

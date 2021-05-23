@@ -79,7 +79,7 @@ describe('Login Component', () => {
     const password = faker.internet.password()
     fireEvent.input(passwordInput, { target: { value: password } })
     const passwordStatus = sut.getByTestId('password-status')
-    expect(passwordStatus.title).toBe('ok')
+    expect(passwordStatus.title).toBe('passed')
     expect(passwordStatus.textContent).toBe('\u{1F7E2}')
   })
 
@@ -90,7 +90,7 @@ describe('Login Component', () => {
     const email = faker.internet.email()
     fireEvent.input(emailInput, { target: { value: email } })
     const emailStatus = sut.getByTestId('email-status')
-    expect(emailStatus.title).toBe('ok')
+    expect(emailStatus.title).toBe('passed')
     expect(emailStatus.textContent).toBe('\u{1F7E2}')
   })
 
@@ -108,5 +108,4 @@ describe('Login Component', () => {
     const submitButton = sut.getByTestId('submit') as HTMLButtonElement
     expect(submitButton.disabled).toBe(false)
   })
-
 })
