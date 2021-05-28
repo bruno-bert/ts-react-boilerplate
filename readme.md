@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.com/bruno-bert/ts-react-boilerplate.svg?branch=master)](https://travis-ci.com/bruno-bert/ts-react-boilerplate)
