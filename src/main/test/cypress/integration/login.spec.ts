@@ -4,7 +4,7 @@ describe('Login', () => {
   })
 
   it('should be able to type', () => {
-    cy.getByTestId('email').focus().type('dd')
-    cy.getByTestId('password').focus().type('dddddddddddddddd')
+    cy.getByTestId('email').focus().type('test')
+    cy.getByTestId('password').focus().type('test')
   })
 })
