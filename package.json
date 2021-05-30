@@ -19,8 +19,8 @@
     "lint": "eslint",
     "postinstall": "husky install",
     "lint-staged": "lint-staged",
-    "test:cypress": "cypress open"
-
+    "test:cypress": "cypress open",
+    "test:cypress-remote": "npx cypress run --record --key 61556c1c-7f92-4429-a0e7-b22f238211a6"
   },
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.9.0",
