@@ -1,4 +1,4 @@
-  
+
 const wp = require('@cypress/webpack-preprocessor')
 
 module.exports = wp({
