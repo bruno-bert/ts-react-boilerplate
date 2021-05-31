@@ -21,7 +21,10 @@
     "postinstall": "husky install",
     "lint-staged": "lint-staged",
     "test:cypress": "cypress open",
-    "test:cypress-remote": "npx cypress run --record --key 61556c1c-7f92-4429-a0e7-b22f238211a6"
+    "test:cypress:remote": "npx cypress run --record --key 61556c1c-7f92-4429-a0e7-b22f238211a6",
+    "test:cypress:run": "cypress run",
+    "test:cypress:ci": "start-server-and-test dev:base http-get://localhost:8080 test:cypress:run"
+
   },
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.9.0",
@@ -58,6 +61,7 @@
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^6.0.0",
     "sass-loader": "^11.1.1",
+    "start-server-and-test": "^1.12.3",
     "style-loader": "^2.0.0",
     "ts-jest": "^26.5.6",
     "ts-loader": "^9.2.1",
