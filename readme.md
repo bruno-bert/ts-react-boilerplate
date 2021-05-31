@@ -2,4 +2,4 @@
 
 # **TS React Boilerplate**
 
-[![TS React Boilerplate](./public/hero.jpeg "Link to my portfolio")](https://brunodeveloper.netlify.app)
+[![TS React Boilerplate Webpack](./public/hero.jpeg "Link to my portfolio")](https://brunodeveloper.netlify.app)
