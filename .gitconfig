@@ -26,3 +26,5 @@
 	amend = !git add --all && git commit --amend --no-edit
 	count = !git shortlog -s --grep	
 	t = !git tag -a $1 -m
+	p = git push origin master
+	ps = git push origin master --no-verify
