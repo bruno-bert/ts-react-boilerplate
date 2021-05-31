@@ -2,7 +2,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/bruno-bert/ts-react-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/bruno-bert/ts-react-boilerplate?branch=master)
 
-
+[![Known Vulnerabilities](https://snyk.io/test/github/bruno-bert/ts-react-boilerplate/badge.svg)](https://snyk.io/test/github/bruno-bert/ts-react-boilerplate)
 
 # **TS React Boilerplate**
 
