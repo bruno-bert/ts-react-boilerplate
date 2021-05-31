@@ -1,0 +1,28 @@
+[core]
+    editor = code
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	hooksPath = .husky
+[remote "origin"]
+	url = https://github.com/bruno-bert/ts-react-boilerplate.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+
+[credential]
+	helper = store
+[user]
+	email = bruno.bert.jj@gmail.com
+	name = Bruno Bertoni de Paula
+[push]
+	followTags = true	
+[alias]
+	c = !git add --all && git commit -m
+	s = !git status -s
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+	amend = !git add --all && git commit --amend --no-edit
+	count = !git shortlog -s --grep	
+	t = !git tag -a 
